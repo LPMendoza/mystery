@@ -15,4 +15,3 @@ $("#rituales").on("click", function (e) {
    $("#contMenuL").removeClass("d-block");
    $("#coverBlackL").removeClass("activeMenuLR");
 });
-

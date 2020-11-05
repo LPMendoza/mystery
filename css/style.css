@@ -88,6 +88,7 @@ body::-webkit-scrollbar-track {
 .contHeader nav {
    position: fixed;
    z-index: 0;
+   border-radius: 0px 0px 10px 10px;
 }
 
 .nav-link {
@@ -158,6 +159,42 @@ body::-webkit-scrollbar-track {
 .contMenuLR {
    width: 100%;
 }
+
+.contMenuCons {
+   width: 100%;
+   margin-top: 5rem;
+}
+
+.menuCons {
+   background-size: cover;
+   height: 320px;
+   padding: 0 !important;
+   margin-right: -4px;
+   width: 150px !important;
+   transition: 0.2s ease;
+}
+
+.menuCons label {
+   position: absolute;
+   transition: 0.2s ease;
+   font-size: 0px;
+}
+
+.menuCons:hover {
+   background-size: cover;
+   height: 320px;
+   padding: 0 !important;
+   margin-right: -4px;
+   width: 380px !important;
+   box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.8);
+   transition: 0.2s ease;
+}
+
+.menuCons:hover label {
+   font-size: 1.75rem;
+   transition: 0.2s ease;
+}
+
 .activeMenuLR {
    background-color: rgba(0,0,0,0);
    color:#fff;
@@ -179,6 +216,20 @@ body::-webkit-scrollbar-track {
    animation: downArrow 1.5s ease infinite;
 }
 
+.btnUp {
+   width: 60px;
+   height: 60px;
+   background-color: #172247;
+   color: white;
+   position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   bottom: 20px;
+   right: 20px;
+   z-index: 1000;
+   border-radius: 10px;
+}
 
 @keyframes downArrow {
    0% {
