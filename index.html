@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mistery</title>
+   <link rel="stylesheet" href="./css/bootstrap.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+   <script src="./js/simpleParallax.min.js"></script>
+</head>
+<body>
+   <header class="contHeader">
+      <nav class="container pt-4 navbar navbar-expand-lg nabvar-light">
+         <a href="#" class="navbar-brand">Mystery</a>
+         <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#leyendas">Leyendas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#rituales">Rituales</a></li>
+            <li class="nav-item"><a class="nav-link" href="#conspiraciones">Conspiraciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="#youtube">Youtube</a></li>
+         </ul>
+         
+      </nav>
+         <div style="align-self: center; position: fixed; transform: translateY(-50px);z-index: -1; display: flex; flex-direction: column;">
+            <h1>Todo lo que nunca supiste</h1>
+            <span class="fas fa-angle-double-down arrowDown mt-2"></span>
+         </div>
+
+      <div id="backgroundParallax" class="backgroundParallax"></div>
+   </header>
+   <div class="contStones">
+   </div>
+   <div class="contMain"> 
+      <div class="divEarth"></div>
+      <section class="sectionLegends">
+         <div class="container py-2 pb-5">
+            <div class="row justify-content-center">
+               <div class="col-6 px-0" id="leyendas">
+                  <div class="coverBlack" id="coverBlackL">
+                     <label for="">Leyendas <span class="fas fa-angle-down ml-2"></span></label>
+                  </div>
+               </div>
+               <div class="col-6" id="rituales">
+                  <div class="coverBlack" id="coverBlackR">
+                     <label for="">Rituales <span class="fas fa-angle-down ml-2"></span></label>
+                  </div>
+               </div>
+               <div class="contMenuLR d-none" id="contMenuL">
+                  <div class="col-4 menuLR d-inline-block" 
+                  style="background: url('./assets/images/llorona.jpg');background-size: cover;">
+                     <div class="coverBlack">
+                        <label for="">La llorona</label>
+                     </div>
+                  </div>
+                  
+                  <div class="col-4 menuLR d-inline-block"
+                  style="background: url('./assets/images/Silbon-.jpg');background-size: cover;">
+                     <div class="coverBlack">
+                        <label for="">El silbón</label>
+                     </div>
+                  </div>
+                  
+                  <div class="col-4 menuLR d-inline-block"
+                  style="background: url('./assets/images/niñosojosnegros.jpg');background-size: cover;">
+                     <div class="coverBlack">
+                        <label for="">Los niños de los ojos negros</label>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="contMenuLR d-none" id="contMenuR">
+                  <div class="col-4 menuLR d-inline-block" 
+                  style="background: url('./assets/images/ventana.jpg');background-size: cover;">
+                     <div class="coverBlack">
+                        <label for="">El juego de la ventana</label>
+                     </div>
+                  </div>
+                  
+                  <div class="col-4 menuLR d-inline-block"
+                  style="background: url('./assets/images/escalera.jpg');background-size: cover;">
+                     <div class="coverBlack">
+                        <label for="">El juego de la escalera</label>
+                     </div>
+                  </div>
+                  
+                  <div class="col-4 menuLR d-inline-block"
+                  style="background: url('./assets/images/reyes.jpg');background-size: cover;">
+                     <div class="coverBlack">
+                        <label for="">Los 3 reyes</label>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="contConsp">
+
+               </div>
+
+            </div>
+         </div>
+
+      </section>
+   </div>
+
+   <script src="./js/jquery.js"></script>
+   <script src="./js/bootstrap.js"></script>
+   <script src="./js/index.js"></script>
+</body>
+</html>

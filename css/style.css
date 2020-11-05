@@ -1,0 +1,190 @@
+@font-face {
+   font-family: 'Macabre';
+   src: url("../assets/fonts/The\ Macabre.otf");
+}
+
+@font-face {
+   font-family: 'Another';
+   src: url("../assets/fonts/Another\ Danger\ Slanted\ -\ Demo.otf");
+}
+
+html, body {
+   width: 100%;
+   height: 100%;
+   color: #fff;
+   font-family: 'Macabre';
+   font-size:  1.5rem;
+   scroll-behavior: smooth;
+}
+
+body {
+
+   background-color: #060515;
+}
+
+body::-webkit-scrollbar {
+   width: 8px;
+   /* Tamaño del scroll en vertical */
+   height: 8px;
+   /* Tamaño del scroll en horizontal */
+   /* Ocultar scroll */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+body::-webkit-scrollbar-thumb {
+   background: #ccc;
+   border-radius: 0px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+body::-webkit-scrollbar-thumb:hover {
+   background: #b3b3b3;
+   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+body::-webkit-scrollbar-thumb:active {
+   background-color: #999999;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+body::-webkit-scrollbar-track {
+   background: #000;
+}
+
+.contMain {
+   background-color: #060515;
+   position: relative;
+   z-index: 100;
+}
+
+.contHeader {
+   width: 100%;
+   height: 100%;
+   /* background: url("../assets/images/backgroundHeader.png"); */
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   z-index: 100;
+}
+
+.backgroundParallax {
+   width: 100%;
+   height: 100%;
+   background: url("../assets/images/backgroundHeader.png");
+   background-size: cover;
+   transition: 0.2s ease;
+   position: fixed;
+   z-index: -5;
+}
+
+
+.contHeader .navbar-brand {
+   font-family: 'Another';
+   color: white;
+   font-size: 1.75rem;
+}
+
+.contHeader nav {
+   position: fixed;
+   z-index: 0;
+}
+
+.nav-link {
+   font-family: 'Macabre';
+   font-size: 1rem;
+   color: white !important;
+   transition: 0.2s ease;
+}
+
+.nav-link:hover {
+   color: #eeee !important;
+   transition: 0.2s ease;
+}
+
+.contStones {
+   background: url("../assets/images/stones.png");
+   background-size: cover;
+   height: 260px;
+   margin-top: -142px;
+   position: relative;
+   z-index: 100;
+}
+
+.divEarth {
+   background: url("../assets/images/sectionBackground.png");
+   background-size: cover;
+   height: 240px;
+}
+
+.sectionLegends {
+   background-color: #000;
+}
+
+#leyendas {
+   background: url("../assets/images/leyendas.jpg");
+   background-size: cover;
+   height: 320px;
+   transition: 0.2s ease;
+}
+
+#rituales {
+   background: url("../assets/images/velas.jpg");
+   background-size: cover;
+   height: 320px;
+   transition: 0.2s ease;
+}
+
+.menuLR {
+   background: url("../assets/images/leyendas.jpg");
+   background-size: cover;
+   height: 320px;
+   padding: 0 !important;
+   margin-right: -4px;
+}
+
+.coverBlack {
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0,0,0,0.5);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.75rem;
+   transition: 0.2s ease;
+   cursor: pointer;
+   color: rgb(209, 209, 209);
+}
+.contMenuLR {
+   width: 100%;
+}
+.activeMenuLR {
+   background-color: rgba(0,0,0,0);
+   color:#fff;
+   font-size: 2rem;
+}
+
+.coverBlack label {
+   cursor: pointer;
+}
+.coverBlack:hover {
+   background-color: rgba(0, 0, 0, 0);
+   font-size: 2rem;
+   transition: 0.2s ease;
+   color: #fff;
+}
+
+.arrowDown {
+   align-self: center;
+   animation: downArrow 1.5s ease infinite;
+}
+
+
+@keyframes downArrow {
+   0% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(20px);
+   }
+}
