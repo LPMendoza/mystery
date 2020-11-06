@@ -231,6 +231,90 @@ body::-webkit-scrollbar-track {
    border-radius: 10px;
 }
 
+.boxesContainer {
+   width: 100%;
+   margin-top: 5rem;
+}
+
+.cardBox {
+   perspective: 800px;
+   transition: all 0.3s ease 0s;
+   display: inline-block;
+   margin-left: -4px;
+}
+
+.cardBox:hover .card {
+   transform: rotateY(180deg);
+}
+
+.card {
+  background: #172247;
+  cursor: default;
+  height: 320px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+}
+
+.front,
+.back {
+   backface-visibility: hidden;
+   box-sizing: border-box;
+   color: white;
+   display: block;
+   font-size: 1.2em;
+   height: 100%;
+   padding: 0.8em;
+   position: absolute;
+   text-align: center;
+   width: 100%;
+}
+
+.back {
+   display: flex;
+   align-items: center;
+   flex-direction: column; 
+   transform: rotateY(180deg);
+}
+
+.cardBox .card {
+   -webkit-animation: giro 1.5s 1;
+   animation: giro 1.5s 1;
+}
+
+@keyframes giro {
+
+   from {
+
+      transform: rotateY(180deg);
+
+   }
+
+   to {
+
+      transform: rotateY(0deg);
+
+   }
+
+}
+
+@-webkit-keyframes giro {
+
+   from {
+
+      transform: rotateY(180deg);
+
+   }
+
+   to {
+
+      transform: rotateY(0deg);
+
+   }
+
+}
+
 @keyframes downArrow {
    0% {
       transform: translateY(0);
